@@ -7,6 +7,7 @@ export const signIn = createAsyncThunk(
   async (formData) => {
     try {
       const response = await authApi.signin(formData);
+      console.log(response);
       return response;
     } catch (error) {
       return error;

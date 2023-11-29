@@ -4,6 +4,7 @@ import App from "./App";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 import "./assets/styles/style.css"
+import "./assets/styles/final.css"
 render(
   <Provider store={store}>
     <App />

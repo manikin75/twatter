@@ -70,7 +70,7 @@ class ProfileClass {
     return this.save();
   }
   signOut() {
-    this.isOnline = true;
+    this.isOnline = false;
     return this.save();
   }
   // PROFILE EDIT

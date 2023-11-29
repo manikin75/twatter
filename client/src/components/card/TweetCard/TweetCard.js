@@ -8,17 +8,17 @@ import TweetHeader from "./TweetHeader";
 const TweetCard = ({ tweet, isRetweeted }) => {
   return (
     <Link
-      className={`tweet display-flex ${isRetweeted && "tweet__retweet"}`}
+      className={`post flex gap-4 border-b-1 border-solid border-slate-700 p-1 mx-4 py-4 flex ${isRetweeted && "tweet__retweet"}`}
       to={`/tweet/${tweet._id}`}
     >
-      <div className="tweet__side--left">
+      <div className="flex-none">
         <Avatar
           username={tweet.author.username}
           avatar={tweet.author.avatar}
           size="small"
         />
       </div>
-      <div className="tweet__side--right">
+      <div className="flex-1">
         <TweetHeader
           tweet={tweet}
           author={tweet.author}

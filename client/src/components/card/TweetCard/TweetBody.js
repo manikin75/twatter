@@ -5,7 +5,7 @@ import TweetCard from "./TweetCard";
 function TweetBody({ body, originalTweet }) {
   return (
     <div>
-      <pre className="tweet__body">{body}</pre>
+      <pre className="my-1 text-sm">{body}</pre>
       {originalTweet &&
         (originalTweet.originalTweet ? (
           <div>

@@ -8,7 +8,7 @@ const storage = multer.diskStorage({
     const ext = file.mimetype.split("/")[1];
     const fileName = req.user.username + "." + ext;
     cb(null, fileName);
-    req.avatar = `http://localhost:5000/${fileName}`;
+    req.avatar = `http://localhost:3008/${fileName}`;
   },
 });
 

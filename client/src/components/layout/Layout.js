@@ -22,19 +22,22 @@ function Layout({ children }) {
     else return;
   };
   return (
+    <>
+    <Header />
     <div
       onClick={() => handleClick()}
       className="layout display-flex justify-content-sb"
     >
+      
       <SidebarLeft />
       <main id="main" className="main flex--2">
-        <Header />
         {children}
       </main>
       <MiniTweetBtn />
       <SidebarRight />
       <TweetModal />
     </div>
+    </>
   );
 }
 
